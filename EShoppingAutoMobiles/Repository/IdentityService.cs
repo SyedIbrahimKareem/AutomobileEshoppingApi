@@ -43,7 +43,7 @@ namespace EShoppingAutoMobiles.Repository
             try
             {
                 string md5Password = MD5HashEncryption.GetMd5Hash(login.Password);
-                UserMaster loginUser = _context.UserMaster.FirstOrDefault(c => c.UserName == login.UserName && c.Password == md5Password);
+                UserRegisteration loginUser = _context.UserRegisteration.FirstOrDefault(c => c.userName == login.UserName && c.password == md5Password);
 
                 if (loginUser == null)
                 {
@@ -111,7 +111,7 @@ namespace EShoppingAutoMobiles.Repository
             }
         }
 
-        public async Task<AuthenticationResult> AuthenticateAsync(UserMaster user)
+        public async Task<AuthenticationResult> AuthenticateAsync(UserRegisteration user)
         {
             // authentication successful so generate jwt token
             AuthenticationResult authenticationResult = new AuthenticationResult();
@@ -123,11 +123,8 @@ namespace EShoppingAutoMobiles.Repository
 
                 ClaimsIdentity Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim("UserId", user.UserId.ToString()),
-                    new Claim("FirstName", user.FirstName),
-                    new Claim("LastName",user.LastName),
-                    new Claim("UserEmail",user.UserEmail==null?"":user.UserEmail),
-                    new Claim("UserName",user.UserName==null?"":user.UserName),
+                    new Claim("UserEmail",user.userEmail==null?"":user.userEmail),
+                    new Claim("UserName",user.userName==null?"":user.userName),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 });
                 foreach (var item in GetUserRole(user.UserId))

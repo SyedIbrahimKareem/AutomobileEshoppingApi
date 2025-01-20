@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace EShoppingAutoMobilesBusinessLibrary.UserModels
 {
@@ -19,5 +21,13 @@ namespace EShoppingAutoMobilesBusinessLibrary.UserModels
         public int UserCartHistoryId { get; set; }
         public string CreatedOn { get; set; }
         public string UpdatedOn { get; set; }
+    }
+    public class UserRegisteration
+    {
+        [Key]
+        public int UserId { get; set; }
+        public string userEmail { get; set; }
+        public string userName { get; set; }
+        public string password { get; set; }
     }
 }

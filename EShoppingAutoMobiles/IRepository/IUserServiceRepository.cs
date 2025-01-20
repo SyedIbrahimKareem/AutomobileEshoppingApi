@@ -5,9 +5,9 @@ namespace EShoppingAutoMobiles.IRepository
 {
     public interface IUserServiceRepository
     {
-        public ResponseModel<UserMaster> AddUser(UserMaster userDetails);
-        public UserMaster UpdateUser(UserMaster userDetails);
+        public ResponseModel<UserRegisteration> AddUser(UserRegisteration userDetails);
+        public UserRegisteration UpdateUser(UserRegisteration userDetails);
         public bool DeleteUser(string userName);
-        public ResponseModel<UserMaster> GetUserDetails(string username);
+        public ResponseModel<UserRegisteration> GetUserDetails(string username);
     }
 }

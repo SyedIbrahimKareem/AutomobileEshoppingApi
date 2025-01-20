@@ -334,3 +334,4 @@ C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMob
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\obj\Debug\net9.0\EShoppingAutoMobiles.pdb
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\obj\Debug\net9.0\EShoppingAutoMobiles.genruntimeconfig.cache
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\obj\Debug\net9.0\ref\EShoppingAutoMobiles.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\obj\Debug\net9.0\EShoppingAutoMobiles.sourcelink.json

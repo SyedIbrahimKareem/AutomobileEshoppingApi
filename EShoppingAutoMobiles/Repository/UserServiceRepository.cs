@@ -3,6 +3,7 @@ using EShoppingAutoMobiles.IRepository;
 using EShoppingAutoMobilesBusinessLibrary.UserModels;
 using EShoppingAutoMobilesBusinessLibrary.Token;
 using Microsoft.AspNetCore.Mvc;
+using EShoppingAutoMobiles.Helpers;
 
 namespace EShoppingAutoMobiles.Repository
 {
@@ -13,20 +14,20 @@ namespace EShoppingAutoMobiles.Repository
         {
             _dbContextClass = dbContextClass;
         }
-        public ResponseModel<UserMaster> AddUser(UserMaster userDetails)
+        public ResponseModel<UserRegisteration> AddUser(UserRegisteration userDetails)
         {
-            ResponseModel<UserMaster> response = new ResponseModel<UserMaster>();
-            userDetails.CreatedOn= DateTime.Now.ToString();
-            userDetails.UpdatedOn = DateTime.Now.ToString();
-            var checkuserExist=_dbContextClass.UserMaster.ToList();
-            var ischeckuserExist = checkuserExist.Where(x => x.UserName == userDetails.UserName);
+            ResponseModel<UserRegisteration> response = new ResponseModel<UserRegisteration>();
+            string md5Password = MD5HashEncryption.GetMd5Hash(userDetails.password);
+            userDetails.password = md5Password;
+            var checkuserExist=_dbContextClass.UserRegisteration.ToList();
+            var ischeckuserExist = checkuserExist.Where(x => x.userName == userDetails.userName);
             if (ischeckuserExist.Count() != 0)
             {
                 response.IsSuccess = false;
                 response.Message = "Username Already Exists";
                 return response;
             }
-            var result = _dbContextClass.UserMaster.Add(userDetails);
+            var result = _dbContextClass.UserRegisteration.Add(userDetails);
             _dbContextClass.SaveChanges();
             if (result.Entity == null) {
 
@@ -41,27 +42,26 @@ namespace EShoppingAutoMobiles.Repository
             response.IsSuccess = true;
             return response;
         }
-        public UserMaster UpdateUser(UserMaster userDetails)
+        public UserRegisteration UpdateUser(UserRegisteration userDetails)
         {
-            var result = _dbContextClass.UserMaster.Update(userDetails);
+            var result = _dbContextClass.UserRegisteration.Update(userDetails);
             _dbContextClass.SaveChanges();
             return result.Entity;
         }
         public bool DeleteUser(string userName)
         {
-            var filteredData = _dbContextClass.UserMaster.Where(x => x.UserName == userName).FirstOrDefault();
+            var filteredData = _dbContextClass.UserRegisteration.Where(x => x.userName == userName).FirstOrDefault();
             var result = _dbContextClass.Remove(filteredData);
             _dbContextClass.SaveChanges();
             return result != null ? true : false;
         }
-        public ResponseModel<UserMaster> GetUserDetails(string username)
+        public ResponseModel<UserRegisteration> GetUserDetails(string username)
         {
-            ResponseModel<UserMaster> responseModel = new ResponseModel<UserMaster>();
-            var data = _dbContextClass.UserMaster.Where(x => x.UserName == username).FirstOrDefault();
+            ResponseModel<UserRegisteration> responseModel = new ResponseModel<UserRegisteration>();
+            var data = _dbContextClass.UserRegisteration.Where(x => x.userName == username).FirstOrDefault();
             if (data !=null)
             {
                 responseModel.Data = data;
-                responseModel.Message = "User Details of " + data.FirstName + " " + data.LastName;
                 responseModel.IsSuccess = true;
                 return responseModel;
             }

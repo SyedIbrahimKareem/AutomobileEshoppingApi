@@ -18,8 +18,8 @@ namespace EShoppingAutoMobiles.Controllers
         }
         //Create user information or profile
         [HttpPost]
-        [Authorize(Roles ="Admin")]
-        public ActionResult<ResponseModel<UserMaster>> AddUserDetails([FromBody] UserMaster userDetails)
+        
+        public ActionResult<ResponseModel<UserMaster>> AddUserDetails([FromBody] UserRegisteration userDetails)
         {
             
             var result = _userService.AddUser(userDetails);
@@ -27,7 +27,7 @@ namespace EShoppingAutoMobiles.Controllers
         }
         // Get user details or information
         [HttpGet]
-        public ActionResult<ResponseModel<UserMaster>> GetUserDetails(string userName)
+        public ActionResult<ResponseModel<UserRegisteration>> GetUserDetails(string userName)
         {
             var result = _userService.GetUserDetails(userName);
             return result;

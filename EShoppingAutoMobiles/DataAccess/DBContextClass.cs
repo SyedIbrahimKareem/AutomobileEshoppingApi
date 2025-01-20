@@ -19,11 +19,11 @@ namespace EShoppingAutoMobiles.DataAccess
             options.UseSqlServer(Configuration["SqlConnection"]);
         }
 
-        public DbSet<UserMaster> UserMaster { get; set; }
+        public DbSet<UserRegisteration> UserRegisteration { get; set; }
 
         protected virtual void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UserMaster>().ToTable("UserMaster").HasKey(x => x.Id);
+            modelBuilder.Entity<UserRegisteration>().ToTable("UserRegisteration").HasKey(x => x.UserId);
             base.OnModelCreating(modelBuilder);
         }
     }

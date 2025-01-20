@@ -97,7 +97,7 @@
     "Parameters": [
       {
         "Name": "userDetails",
-        "Type": "EShoppingAutoMobilesBusinessLibrary.UserModels.UserMaster",
+        "Type": "EShoppingAutoMobilesBusinessLibrary.UserModels.UserRegisteration",
         "IsRequired": true
       }
     ],
@@ -155,7 +155,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "EShoppingAutoMobilesBusinessLibrary.Token.ResponseModel\u00601[[EShoppingAutoMobilesBusinessLibrary.UserModels.UserMaster, EShoppingAutoMobilesBusinessLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "EShoppingAutoMobilesBusinessLibrary.Token.ResponseModel\u00601[[EShoppingAutoMobilesBusinessLibrary.UserModels.UserRegisteration, EShoppingAutoMobilesBusinessLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

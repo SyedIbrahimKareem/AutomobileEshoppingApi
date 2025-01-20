@@ -22,3 +22,4 @@ C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMob
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\refint\EShoppingAutoMobilesBusinessLibrary.dll
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingAutoMobilesBusinessLibrary.pdb
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\ref\EShoppingAutoMobilesBusinessLibrary.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingAutoMobilesBusinessLibrary.sourcelink.json
