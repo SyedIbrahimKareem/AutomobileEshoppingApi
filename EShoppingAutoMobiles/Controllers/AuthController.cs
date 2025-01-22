@@ -9,17 +9,30 @@ namespace EShoppingAutoMobiles.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IIdentityService _identityService;
-        public AuthController(IIdentityService identityService)
+        private readonly ILogger<AuthController> _logger;
+        public AuthController(IIdentityService identityService, ILogger<AuthController> logger)
         {
             _identityService = identityService;
+            _logger = logger;
         }
 
         [Route("login")]
         [HttpPost]
         public async Task<IActionResult> LoginAsync([FromBody] LoginModel loginModel)
         {
-            var result = await _identityService.LoginAsync(loginModel);
-            return Ok(result);
+            try
+            {
+
+                _logger.LogInformation("Creating Refersh token at" + "" + DateTime.Now.ToString());
+                var result = await _identityService.LoginAsync(loginModel);
+                return Ok(result);
+            }
+            catch (Exception ex) 
+            {
+                _logger.LogWarning("Error thrown message :", ex.Message);
+                return BadRequest(ex.Message);
+            }
+            
         }
     }
 }

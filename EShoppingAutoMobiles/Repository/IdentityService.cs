@@ -26,14 +26,16 @@ namespace EShoppingAutoMobiles.Repository
         private readonly RefreshTokenDBContext _refreshTokenDBContext;
         private readonly ServiceConfiguration _appSettings;
         private readonly TokenValidationParameters _tokenValidationParameters;
+        private readonly ILogger<IdentityService> _logger;
         public IdentityService(DbContextClass context,
             IOptions<ServiceConfiguration> settings,
-            TokenValidationParameters tokenValidationParameters, RefreshTokenDBContext refreshTokenDBContext)
+            TokenValidationParameters tokenValidationParameters, RefreshTokenDBContext refreshTokenDBContext, ILogger<IdentityService> logger)
         {
             _context = context;
             _appSettings = settings.Value;
             _tokenValidationParameters = tokenValidationParameters;
             _refreshTokenDBContext = refreshTokenDBContext;
+            _logger = logger;
         }
 
 
@@ -44,11 +46,12 @@ namespace EShoppingAutoMobiles.Repository
             {
                 string md5Password = MD5HashEncryption.GetMd5Hash(login.Password);
                 UserRegisteration loginUser = _context.UserRegisteration.FirstOrDefault(c => c.userName == login.UserName && c.password == md5Password);
-
+                _logger.LogInformation("Encryption of password");
                 if (loginUser == null)
                 {
                     response.IsSuccess = false;
                     response.Message = "Invalid Username And Password";
+                    _logger.LogInformation("Invalid Username And Password");
                     return response;
                 }
 
@@ -62,7 +65,7 @@ namespace EShoppingAutoMobiles.Repository
                     response.Message = authenticationResult.Error;
                     response.IsSuccess = false;
                 }
-
+                _logger.LogInformation("Returning of Refresh token from identity services");
                 return response;
             }
             catch (Exception ex)
@@ -75,6 +78,7 @@ namespace EShoppingAutoMobiles.Repository
         {
             try
             {
+                _logger.LogInformation("User roles fetching happening...");
                 List<RoleMaster> lst= new List<RoleMaster> ();
                 DataTable table = new DataTable("Table");
                 using (SqlConnection connection = new SqlConnection("server=I25002; database=ElectronicShopping; Integrated Security=true; Encrypt=false"))
@@ -103,6 +107,7 @@ namespace EShoppingAutoMobiles.Repository
                     }
 
                 }
+                _logger.LogInformation("Returning of user roles");
                 return lst;
             }
             catch (Exception)
@@ -119,6 +124,7 @@ namespace EShoppingAutoMobiles.Repository
 
             try
             {
+                _logger.LogInformation("Generating the keys of secret");
                 var key = Encoding.ASCII.GetBytes(_appSettings.JwtSettings.Secret);
 
                 ClaimsIdentity Subject = new ClaimsIdentity(new Claim[]
@@ -127,6 +133,7 @@ namespace EShoppingAutoMobiles.Repository
                     new Claim("UserName",user.userName==null?"":user.userName),
                     new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 });
+                _logger.LogInformation("Adding the claims of user roles");
                 foreach (var item in GetUserRole(user.UserId))
                 {
                     Subject.AddClaim(new Claim(ClaimTypes.Role, item.RoleName));
@@ -148,10 +155,12 @@ namespace EShoppingAutoMobiles.Repository
                     CreationDate = DateTime.UtcNow,
                     ExpiryDate = DateTime.UtcNow.AddMonths(6)
                 };
+                _logger.LogInformation("Storing the token in database");
                 await _refreshTokenDBContext.reFreshTokens.AddAsync(refreshToken);
                 await _context.SaveChangesAsync();
                 authenticationResult.RefreshToken = refreshToken.Token;
                 authenticationResult.Success = true;
+                _logger.LogInformation("returning of tokens to loginAsync Method");
                 return authenticationResult;
             }
             catch (Exception ex)

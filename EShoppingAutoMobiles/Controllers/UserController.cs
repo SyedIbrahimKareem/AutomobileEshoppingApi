@@ -12,16 +12,18 @@ namespace EShoppingAutoMobiles.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserServiceRepository _userService;
-        public UserController(IUserServiceRepository userService)
+        private readonly ILogger<UserController> _logger;
+        public UserController(IUserServiceRepository userService, ILogger<UserController> logger)
         {
             _userService = userService;
+            _logger = logger;
         }
         //Create user information or profile
         [HttpPost]
         
         public ActionResult<ResponseModel<UserMaster>> AddUserDetails([FromBody] UserRegisteration userDetails)
         {
-            
+            _logger.LogInformation("Registering the User Details");
             var result = _userService.AddUser(userDetails);
             return Ok(result);
         }

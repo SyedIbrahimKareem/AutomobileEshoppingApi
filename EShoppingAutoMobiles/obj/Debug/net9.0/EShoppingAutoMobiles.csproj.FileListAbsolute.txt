@@ -335,3 +335,12 @@ C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMob
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\obj\Debug\net9.0\EShoppingAutoMobiles.genruntimeconfig.cache
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\obj\Debug\net9.0\ref\EShoppingAutoMobiles.dll
 C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\obj\Debug\net9.0\EShoppingAutoMobiles.sourcelink.json
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.AspNetCore.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+C:\Users\syedibrahim.kareem\source\repos\AutomobileEshoppingApi\EShoppingAutoMobiles\bin\Debug\net9.0\Serilog.Sinks.File.dll

@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.WebUtilities;
 using System.Net;
 using System.Net.Http;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Logging;
 
 namespace EShoppingAutoMobiles.Controllers
 {
@@ -19,10 +20,12 @@ namespace EShoppingAutoMobiles.Controllers
     {
         private ILog _log;
         public readonly IProductRepository _productServices;
-        public ProductsControllers(IProductRepository productServices)
+        private readonly ILogger<ProductsControllers> _logger;
+        public ProductsControllers(IProductRepository productServices, ILogger<ProductsControllers> logger)
         {
             _productServices = productServices;
             _log = Log.GetInstance();
+            _logger = logger;
         }
         // GET: ProductControllercs
 
@@ -37,15 +40,17 @@ namespace EShoppingAutoMobiles.Controllers
                     var response = new HttpResponseMessage(HttpStatusCode.NotFound)
                     {
                         Content = new StringContent(string.Format("No Product found with ID = {0}")),
-                        ReasonPhrase = "Product Not Found"
+                        ReasonPhrase = "Product Not Found",
+                        
                     };
-
+                    _logger.LogInformation("Product Not Found from GetProductList");
                     //throw new HttpResponseException(response);
                 }
                 return productList;
             }
             catch (Exception ex)
             {
+                _logger.LogWarning("Exception has been thrown :", ex.Message);
                 _log.LogException(ex.StackTrace.ToString());
                 return Enumerable.Empty<Product>();
             }
@@ -57,14 +62,19 @@ namespace EShoppingAutoMobiles.Controllers
         [HttpGet]
         public async Task<Product> GetProductDetailByName(string name)
         {
+            _logger.LogInformation("Product name method calling...");
             var productList = await _productServices.GetProductByName(name);
+            _logger.LogInformation("returning the list of products from name related:"+" "+name);
             return productList;
         }
         [HttpGet]
         public async Task<IEnumerable<Product>> GetProductListSearch(string searchValue)
         {
+            _logger.LogInformation("Product search method calling...");
             var productList = await _productServices.GetProductList();
-            productList=productList.Where(x => x.productName.Contains(searchValue)).ToList();
+            _logger.LogInformation("Fetching product details from the DB...");
+            productList =productList.Where(x => x.productName.Contains(searchValue)).ToList();
+            _logger.LogInformation("Product filtering and returning to response...");
             return productList;
         }
     }
