@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EShoppingAutoMobilesBusinessLibrary\EShoppingAutoMobilesBusinessLibrary.csproj" />
+    <ProjectReference Include="..\EShoppingAutoMobilesBusinessLibrary\EShoppingBusinessLibrary.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
-@EShoppingAutoMobiles_HostAddress = http://localhost:5270
+@EShoppingAPI_HostAddress = http://localhost:5270
 
-GET {{EShoppingAutoMobiles_HostAddress}}/weatherforecast/
+GET {{EShoppingAPI_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

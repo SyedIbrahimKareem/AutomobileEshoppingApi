@@ -1,5 +1,5 @@
-﻿using EShoppingAutoMobiles.DataAccess;
-namespace EShoppingAutoMobiles.DBConnection
+﻿using EShoppingAPI.DataAccess;
+namespace EShoppingAPI.DBConnection
 {
     public class DataBaseConnectionObject
     {

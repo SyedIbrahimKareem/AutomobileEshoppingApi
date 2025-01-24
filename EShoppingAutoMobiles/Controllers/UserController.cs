@@ -1,12 +1,12 @@
-﻿using EShoppingAutoMobiles.IRepository;
-using EShoppingAutoMobilesBusinessLibrary.UserModels;
+﻿using EShoppingAPI.IRepository;
+using EShoppingBusinessLibrary.UserModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
-using EShoppingAutoMobilesBusinessLibrary.Token;
+using EShoppingBusinessLibrary.Token;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace EShoppingAutoMobiles.Controllers
+namespace EShoppingAPI.Controllers
 {
     [Route("api/[controller]/[action]")]
     public class UserController : ControllerBase

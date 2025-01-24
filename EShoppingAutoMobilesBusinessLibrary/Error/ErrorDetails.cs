@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace EShoppingAutoMobilesBusinessLibrary.Error
+namespace EShoppingBusinessLibrary.Error
 {
     public class ErrorDetails
     {

@@ -1,15 +1,15 @@
-﻿using EShoppingAutoMobilesBusinessLibrary.Token;
-using EShoppingAutoMobilesBusinessLibrary.UserModels;
+﻿using EShoppingBusinessLibrary.Token;
+using EShoppingBusinessLibrary.UserModels;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using EShoppingAutoMobilesBusinessLibrary.Token;
+using EShoppingBusinessLibrary.Token;
 using JwtRegisteredClaimNames = System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames;
-using EShoppingAutoMobiles.DataAccess;
-using EShoppingAutoMobiles.Helpers;
-using EShoppingAutoMobiles.IRepository;
+using EShoppingAPI.DataAccess;
+using EShoppingAPI.Helpers;
+using EShoppingAPI.IRepository;
 using Microsoft.Data.SqlClient;
 using System.Data;
 using System.Data.Common;
@@ -18,7 +18,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Collections.Generic;
 
 
-namespace EShoppingAutoMobiles.Repository
+namespace EShoppingAPI.Repository
 {
     public class IdentityService : IIdentityService
     {

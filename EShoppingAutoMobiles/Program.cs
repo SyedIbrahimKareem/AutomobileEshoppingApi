@@ -1,4 +1,4 @@
-using EShoppingAutoMobiles;
+using EShoppingAPI;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);

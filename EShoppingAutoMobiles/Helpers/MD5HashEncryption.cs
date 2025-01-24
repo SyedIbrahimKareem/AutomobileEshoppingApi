@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 
-namespace EShoppingAutoMobiles.Helpers
+namespace EShoppingAPI.Helpers
 {
     public static class MD5HashEncryption
     {

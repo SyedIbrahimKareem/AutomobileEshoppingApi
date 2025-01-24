@@ -1,4 +1,4 @@
-﻿namespace EShoppingAutoMobilesBusinessLibrary
+﻿namespace EShoppingBusinessLibrary
 {
     public class Class1
     {

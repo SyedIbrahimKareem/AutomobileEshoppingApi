@@ -1,16 +1,16 @@
-﻿using EShoppingAutoMobilesBusinessLibrary.Token;
+﻿using EShoppingBusinessLibrary.Token;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using EShoppingAutoMobiles.DataAccess;
+using EShoppingAPI.DataAccess;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using EShoppingAutoMobiles.IRepository;
-using EShoppingAutoMobiles.Repository;
+using EShoppingAPI.IRepository;
+using EShoppingAPI.Repository;
 
-namespace EShoppingAutoMobiles
+namespace EShoppingAPI
 {
     public class Startup
     {

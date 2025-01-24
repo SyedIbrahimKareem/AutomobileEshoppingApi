@@ -1,9 +1,9 @@
-﻿using EShoppingAutoMobilesBusinessLibrary.ProductModels;
-using EShoppingAutoMobiles.IRepository;
-using EShoppingAutoMobiles.DataAccess;
+﻿using EShoppingBusinessLibrary.ProductModels;
+using EShoppingAPI.IRepository;
+using EShoppingAPI.DataAccess;
 using Dapper;
-using EShoppingAutoMobiles.Helpers;
-namespace EShoppingAutoMobiles.Repository
+using EShoppingAPI.Helpers;
+namespace EShoppingAPI.Repository
 {
     public class ProductRepository : IProductRepository
     {

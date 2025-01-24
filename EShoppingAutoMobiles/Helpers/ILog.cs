@@ -1,4 +1,4 @@
-﻿namespace EShoppingAutoMobiles.Helpers
+﻿namespace EShoppingAPI.Helpers
 {
     public interface ILog
     {

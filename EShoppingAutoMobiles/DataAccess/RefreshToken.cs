@@ -1,8 +1,8 @@
-﻿using EShoppingAutoMobilesBusinessLibrary.Token;
-using EShoppingAutoMobilesBusinessLibrary.UserModels;
+﻿using EShoppingBusinessLibrary.Token;
+using EShoppingBusinessLibrary.UserModels;
 using Microsoft.EntityFrameworkCore;
 
-namespace EShoppingAutoMobiles.DataAccess
+namespace EShoppingAPI.DataAccess
 {
     public class RefreshTokenDBContext
         : DbContext

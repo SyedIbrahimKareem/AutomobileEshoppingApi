@@ -1,4 +1,4 @@
-﻿namespace EShoppingAutoMobilesBusinessLibrary.ProductModels
+﻿namespace EShoppingBusinessLibrary.ProductModels
 {
     public class Product
     {

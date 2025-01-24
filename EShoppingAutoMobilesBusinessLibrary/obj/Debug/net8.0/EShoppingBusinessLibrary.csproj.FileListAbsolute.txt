@@ -1,0 +1,13 @@
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\bin\Debug\net8.0\EShoppingBusinessLibrary.deps.json
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\bin\Debug\net8.0\EShoppingBusinessLibrary.dll
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\bin\Debug\net8.0\EShoppingBusinessLibrary.pdb
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingBusinessLibrary.csproj.AssemblyReference.cache
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingBusinessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingBusinessLibrary.AssemblyInfoInputs.cache
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingBusinessLibrary.AssemblyInfo.cs
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingBusinessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingBusinessLibrary.sourcelink.json
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingBusinessLibrary.dll
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\refint\EShoppingBusinessLibrary.dll
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\EShoppingBusinessLibrary.pdb
+C:\Users\syedibrahim.kareem\Source\Repos\EShoppingApi\EShoppingAutoMobilesBusinessLibrary\obj\Debug\net8.0\ref\EShoppingBusinessLibrary.dll

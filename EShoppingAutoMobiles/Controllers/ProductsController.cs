@@ -1,8 +1,8 @@
-﻿using EShoppingAutoMobiles.Repository;
-using EShoppingAutoMobilesBusinessLibrary.ProductModels;
+﻿using EShoppingAPI.Repository;
+using EShoppingBusinessLibrary.ProductModels;
 using Microsoft.AspNetCore.Mvc;
-using EShoppingAutoMobiles.IRepository;
-using EShoppingAutoMobiles.Helpers;
+using EShoppingAPI.IRepository;
+using EShoppingAPI.Helpers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.AspNetCore.WebUtilities;
@@ -11,7 +11,7 @@ using System.Net.Http;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 
-namespace EShoppingAutoMobiles.Controllers
+namespace EShoppingAPI.Controllers
 {
     [Authorize(Roles ="User")]
     [ApiController]

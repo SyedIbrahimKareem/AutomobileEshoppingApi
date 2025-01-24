@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace EShoppingAutoMobiles.Controllers
+namespace EShoppingAPI.Controllers
 {
     public class CartController : Controller
     {

@@ -1,6 +1,6 @@
-﻿using EShoppingAutoMobilesBusinessLibrary.ProductModels;
+﻿using EShoppingBusinessLibrary.ProductModels;
 
-namespace EShoppingAutoMobiles.IRepository
+namespace EShoppingAPI.IRepository
 {
     public interface IProductRepository
     {

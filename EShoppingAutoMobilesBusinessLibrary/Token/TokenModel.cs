@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace EShoppingAutoMobilesBusinessLibrary.Token
+namespace EShoppingBusinessLibrary.Token
 {
     public class TokenModel
     {

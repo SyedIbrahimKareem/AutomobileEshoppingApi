@@ -1,7 +1,7 @@
 ﻿using System.Data;
 using System.Data;
 using Microsoft.Data.SqlClient;
-namespace EShoppingAutoMobiles.DataAccess
+namespace EShoppingAPI.DataAccess
 {
     public class DapperContext
     {

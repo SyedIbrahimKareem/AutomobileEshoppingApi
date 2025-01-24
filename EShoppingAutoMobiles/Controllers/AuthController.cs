@@ -1,8 +1,8 @@
-﻿using EShoppingAutoMobiles.IRepository;
-using EShoppingAutoMobilesBusinessLibrary.UserModels;
+﻿using EShoppingAPI.IRepository;
+using EShoppingBusinessLibrary.UserModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EShoppingAutoMobiles.Controllers
+namespace EShoppingAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

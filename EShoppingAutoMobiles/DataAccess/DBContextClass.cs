@@ -1,10 +1,10 @@
-﻿using EShoppingAutoMobilesBusinessLibrary.UserModels;
+﻿using EShoppingBusinessLibrary.UserModels;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 using Microsoft.EntityFrameworkCore;
-using EShoppingAutoMobilesBusinessLibrary.Token;
+using EShoppingBusinessLibrary.Token;
 
-namespace EShoppingAutoMobiles.DataAccess
+namespace EShoppingAPI.DataAccess
 {
     public class DbContextClass : DbContext
     {

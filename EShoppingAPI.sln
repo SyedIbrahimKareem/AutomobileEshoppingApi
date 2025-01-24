@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShoppingAPI", "EShoppingAutoMobiles\EShoppingAPI.csproj", "{E33AD634-30B8-4CD8-B910-E7C8A1834340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShoppingBusinessLibrary", "EShoppingAutoMobilesBusinessLibrary\EShoppingBusinessLibrary.csproj", "{A7482255-AA52-4BCC-9288-BF0BB8A6A87A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E33AD634-30B8-4CD8-B910-E7C8A1834340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33AD634-30B8-4CD8-B910-E7C8A1834340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33AD634-30B8-4CD8-B910-E7C8A1834340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33AD634-30B8-4CD8-B910-E7C8A1834340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7482255-AA52-4BCC-9288-BF0BB8A6A87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7482255-AA52-4BCC-9288-BF0BB8A6A87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7482255-AA52-4BCC-9288-BF0BB8A6A87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7482255-AA52-4BCC-9288-BF0BB8A6A87A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

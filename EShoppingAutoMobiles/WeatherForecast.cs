@@ -1,4 +1,4 @@
-namespace EShoppingAutoMobiles
+namespace EShoppingAPI
 {
     public class WeatherForecast
     {

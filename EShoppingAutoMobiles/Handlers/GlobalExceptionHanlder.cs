@@ -1,4 +1,4 @@
-﻿using EShoppingAutoMobilesBusinessLibrary.Error;
+﻿using EShoppingBusinessLibrary.Error;
 using System.Net;
 using Microsoft.Extensions.Logging;
 

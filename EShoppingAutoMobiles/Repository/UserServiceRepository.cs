@@ -1,11 +1,11 @@
-﻿using EShoppingAutoMobiles.DataAccess;
-using EShoppingAutoMobiles.IRepository;
-using EShoppingAutoMobilesBusinessLibrary.UserModels;
-using EShoppingAutoMobilesBusinessLibrary.Token;
+﻿using EShoppingAPI.DataAccess;
+using EShoppingAPI.IRepository;
+using EShoppingBusinessLibrary.UserModels;
+using EShoppingBusinessLibrary.Token;
 using Microsoft.AspNetCore.Mvc;
-using EShoppingAutoMobiles.Helpers;
+using EShoppingAPI.Helpers;
 
-namespace EShoppingAutoMobiles.Repository
+namespace EShoppingAPI.Repository
 {
     public class UserServiceRepository : IUserServiceRepository
     {

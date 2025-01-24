@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace EShoppingAutoMobilesBusinessLibrary.UserModels
+namespace EShoppingBusinessLibrary.UserModels
 {
     public class LoginModel
     {

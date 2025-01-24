@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 using System.Text;
-namespace EShoppingAutoMobiles.Helpers
+namespace EShoppingAPI.Helpers
 {
     public sealed class Log  : ILog
     {

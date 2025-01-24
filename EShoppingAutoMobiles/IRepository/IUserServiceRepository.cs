@@ -1,7 +1,7 @@
-﻿using EShoppingAutoMobilesBusinessLibrary.Token;
-using EShoppingAutoMobilesBusinessLibrary.UserModels;
+﻿using EShoppingBusinessLibrary.Token;
+using EShoppingBusinessLibrary.UserModels;
 
-namespace EShoppingAutoMobiles.IRepository
+namespace EShoppingAPI.IRepository
 {
     public interface IUserServiceRepository
     {

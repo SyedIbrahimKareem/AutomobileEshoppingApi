@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\syedibrahim.kareem\\source\\repos\\AutomobileEshoppingApi\\EShoppingAutoMobilesBusinessLibrary\\EShoppingAutoMobilesBusinessLibrary.csproj",
-      "projectName": "EShoppingAutoMobilesBusinessLibrary",
-      "projectPath": "C:\\Users\\syedibrahim.kareem\\source\\repos\\AutomobileEshoppingApi\\EShoppingAutoMobilesBusinessLibrary\\EShoppingAutoMobilesBusinessLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\syedibrahim.kareem\\Source\\Repos\\EShoppingApi\\EShoppingAutoMobilesBusinessLibrary\\EShoppingBusinessLibrary.csproj",
+      "projectName": "EShoppingBusinessLibrary",
+      "projectPath": "C:\\Users\\syedibrahim.kareem\\Source\\Repos\\EShoppingApi\\EShoppingAutoMobilesBusinessLibrary\\EShoppingBusinessLibrary.csproj",
       "packagesPath": "C:\\Users\\syedibrahim.kareem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\syedibrahim.kareem\\source\\repos\\AutomobileEshoppingApi\\EShoppingAutoMobilesBusinessLibrary\\obj\\",
+      "outputPath": "C:\\Users\\syedibrahim.kareem\\Source\\Repos\\EShoppingApi\\EShoppingAutoMobilesBusinessLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

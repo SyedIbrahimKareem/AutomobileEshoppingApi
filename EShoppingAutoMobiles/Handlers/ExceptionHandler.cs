@@ -1,5 +1,5 @@
 ﻿
-namespace EShoppingAutoMobiles.Handlers
+namespace EShoppingAPI.Handlers
 {
     public class ExceptionHandler : Exception
     {

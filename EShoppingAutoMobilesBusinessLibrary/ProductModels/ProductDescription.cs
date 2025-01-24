@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-namespace EShoppingAutoMobilesBusinessLibrary.ProductModels
+namespace EShoppingBusinessLibrary.ProductModels
 {
     public class ProductDescription
     {
