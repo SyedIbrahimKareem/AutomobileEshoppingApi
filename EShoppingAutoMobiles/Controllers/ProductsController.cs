@@ -13,15 +13,15 @@ using Microsoft.Extensions.Logging;
 
 namespace EShoppingAPI.Controllers
 {
-    [Authorize(Roles ="User")]
+    //[Authorize(Roles ="User")]
     [ApiController]
     [Route("api/[controller]/[action]")]
-    public class ProductsControllers : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private ILog _log;
         public readonly IProductRepository _productServices;
-        private readonly ILogger<ProductsControllers> _logger;
-        public ProductsControllers(IProductRepository productServices, ILogger<ProductsControllers> logger)
+        private readonly ILogger<ProductsController> _logger;
+        public ProductsController(IProductRepository productServices, ILogger<ProductsController> logger)
         {
             _productServices = productServices;
             _log = Log.GetInstance();
